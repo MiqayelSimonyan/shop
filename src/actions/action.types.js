@@ -1,0 +1,13 @@
+export const ADD_SHOPS = 'ADD_SHOPS';
+export const ADD_SHOP = 'ADD_SHOP';
+export const UPDATE_SHOP = 'UPDATE_SHOP';
+export const DELETE_SHOP = 'DELETE_SHOP';
+export const ADD_PRODUCTS = 'ADD_PRODUCTS';
+export const ADD_PRODUCT = 'ADD_PRODUCT';
+export const UPDATE_PRODUCT = 'UPDATE_PRODUCT';
+export const DELETE_PRODUCT = 'DELETE_PRODUCT';
+export const SET_SUCCESS = 'SET_SUCCESS';
+export const DELETE_SUCCESS = 'DELETE_SUCCESS';
+export const SET_ERROR = 'SET_ERROR';
+export const DELETE_ERROR = 'DELETE_ERROR';
+export const DELETE_ERRORS = 'DELETE_ERRORS';

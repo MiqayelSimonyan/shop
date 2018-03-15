@@ -1,0 +1,18 @@
+@import 'variables.scss';
+
+.navigation {
+    ul {
+        &>div {
+            width : 23%;
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: $grey-color;
+    }
+    .navigation_active {
+        background-color: $blue-color;
+        color: $white-color;
+    }
+}

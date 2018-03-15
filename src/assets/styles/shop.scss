@@ -1,0 +1,87 @@
+@import 'variables.scss';
+
+.shop_wrapper {
+    width: 100%;
+    li {
+        list-style: none;
+        padding: 15px 0;
+        border-top: 1px solid $light-grey-color;
+        border-bottom: 1px solid $light-grey-color;
+        overflow: hidden;
+        a {
+            color: $black-color;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }    
+    button {
+        line-height: 30px;
+    }
+}
+
+.shop_wrapper_bottom, .product_wrapper_bottom {
+    margin-top: 10px;
+    button {
+        background-color: $black-color!important;
+        line-height: 45px;
+        min-width: 220px;
+    }
+}
+
+.current_shop_name {
+    text-align: center;
+}
+
+th {
+    border: 2px dotted $light-dark-grey-color;
+}
+
+tr {
+    border: 1px dotted $light-grey-color;
+    td {
+        padding: 3px 0;
+        svg {
+            margin-left: 60px;
+        }
+        .total_price {
+            text-align: right;
+            line-height: 20px;
+            margin-left: 60px;
+        }
+    }
+}
+
+.shop_edit_button {
+    float: right;
+    min-width: 120px!important;
+    margin-left: 10px;
+    button {
+        background-color: $green-color!important;
+    }
+}
+
+.shop_delete_button {
+    float: right;
+    min-width: 120px!important;
+    margin-left: 10px;
+    button {
+        background-color: $red-color!important;
+    }
+}
+
+.edit_icon {
+    float: left;
+}
+
+.edit_area {
+    float: left;
+    line-height: 31px;;
+    width: 77%;
+}
+
+.currency {
+    float: left;
+    line-height: 31px;
+}
