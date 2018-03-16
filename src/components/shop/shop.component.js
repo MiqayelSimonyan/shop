@@ -25,13 +25,12 @@ const ShopComponent = props => {
 
     return (
         <li>
-            <NavLink exact to={`/shop/${id}`}>
-                <EditIcon
-                    className="edit_icon"
-                    style={iconStyles}
-                    color={blue500}
-                />
-            </NavLink>
+            <NavLink exact to={`/shop/${id}`}></NavLink>
+            <EditIcon
+                className="edit_icon"
+                style={iconStyles}
+                color={blue500}
+            />
             <ContentEditable
                 html={shop.name}
                 className="edit_area"
@@ -54,6 +53,7 @@ const ShopComponent = props => {
                 label="Edit"
                 primary={true}
             />
+
         </li>
     )
 };

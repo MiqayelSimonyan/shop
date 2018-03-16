@@ -35,7 +35,7 @@ class ProductCreateContainer extends Component {
 
     render() {
         return (
-            <div style={{ width: '32%' }}>
+            <div>
                 <ProductCreateComponent
                     name={this.state.name}
                     quantity={+this.state.quantity}

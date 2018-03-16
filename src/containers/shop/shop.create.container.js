@@ -31,7 +31,7 @@ class ShopCreateContainer extends Component {
 
     render() {
         return (
-            <div style={{ width: '32%' }}>
+            <div>
                 <ShopCreateComponent
                     shops_state={this.state && this.state.shops}
                     handleChange={this.handleChange}

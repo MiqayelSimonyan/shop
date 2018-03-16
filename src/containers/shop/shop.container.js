@@ -14,11 +14,6 @@ class ShopContainer extends Component {
         this.props.getShops('/api/shops');
     }
 
-    deleteProduct = id => {
-        let productDelete = confirm('Do you want to delete product');
-        if (productDelete) this.props.deleteProduct(`/api/product/${id}`);
-    }
-
     handleChange = (id, field, event) => {
         this.setState({ [id]: { name: event.target.value } })
     }
@@ -34,7 +29,7 @@ class ShopContainer extends Component {
 
     render() {
         return (
-            <div style={{ width: '100%' }}>
+            <div className="container">
                 {this.props.errors && this.props.errors.length ? (
                     <AlertContainer errors={this.props.errors} duration="8000" />
                 ) : this.props.success && this.props.success.length ? (

@@ -11,7 +11,7 @@ const ShopListComponent = props => {
     return (
         <div className="shop_wrapper">
             <h2>SHOPS</h2>
-            <ul>
+            <ul className="shop_list">
                 {
                     shops.map(shop =>
                         <ShopComponent

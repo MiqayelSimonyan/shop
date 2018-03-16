@@ -69,7 +69,7 @@ class ShopInnerContainer extends Component {
         const { currentShop, totalPrice } = this.state;
 
         return (
-            <div style={{ width: '100%' }}>
+            <div className="container">
                 {this.props.errors && this.props.errors.length ? (
                     <AlertContainer errors={this.props.errors} duration="8000" />
                 ) : this.props.success && this.props.success.length ? (

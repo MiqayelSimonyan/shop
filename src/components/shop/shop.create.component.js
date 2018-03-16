@@ -16,13 +16,8 @@ const ShopCreateComponent = props => {
         height: '45px'
     }
 
-    const containersStyles = {
-        margin: 5,
-        width: '100%'
-    };
-
     return (
-        <div style={containersStyles}>
+        <div className="container">
             {isOpen ?
                 <div>
                     <div className="add_shop_wrapper">

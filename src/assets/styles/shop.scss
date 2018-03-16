@@ -1,13 +1,36 @@
 @import 'variables.scss';
 
+.container {
+    width: 100%;
+}
+
 .shop_wrapper {
     width: 100%;
+    .shop_list {
+        li {
+            position: relative;
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
     li {
         list-style: none;
-        padding: 15px 0;
+        padding: 30px 0;
         border-top: 1px solid $light-grey-color;
         border-bottom: 1px solid $light-grey-color;
         overflow: hidden;
+        .edit_area {
+            float: left;
+            line-height: 31px;;
+            width: 77%;
+            position: relative;
+            z-index: 999;
+        }
         a {
             color: $black-color;
             text-decoration: none;
@@ -73,15 +96,21 @@ tr {
 
 .edit_icon {
     float: left;
-}
-
-.edit_area {
-    float: left;
-    line-height: 31px;;
-    width: 77%;
+    left: 30px;
 }
 
 .currency {
     float: left;
     line-height: 31px;
+    position: relative;
+    left: 27px;
+}
+
+.edit_area {
+    float: left;
+    line-height: 31px;;
+    width: 60%;
+    padding-left: 30px;
+    position: relative;
+    z-index: 999;
 }
